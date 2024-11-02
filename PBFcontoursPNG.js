@@ -83,8 +83,8 @@ async function toPng(z){//List{z:10～18}
       }).png().toBuffer()
       const writeFile=()=>{
        if(pngBuffer.length==355){last();return}//空png
-       fs.writeFile(`C:/maptw.github.io/${z}/${x}/${y}.png`,pngBuffer,err=>{
-        if(err){fs.mkdirSync(`C:/maptw.github.io/${z}/${x}`,{recursive:true});writeFile();return}//創建目錄
+       fs.writeFile(`C:/256/${z}/${x}/${y}.png`,pngBuffer,err=>{
+        if(err){fs.mkdirSync(`C:/256/${z}/${x}`,{recursive:true});writeFile();return}//創建目錄
         if(!ListZ[x])ListZ[x]=[];ListZ[x].push(y);last()
        })
       }
