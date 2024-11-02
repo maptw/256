@@ -60,7 +60,7 @@ fetch('https://cors-rrw.onrender.com/github/wbjon/map_json/04.json').then(res=>r
   map[i].available=true
  }
  //console.log(map)
- toPng(13);child()//List{z:10～18}
+ toPng(14);child()//List{z:10～18}
 })
 
 async function toPng(z){//List{z:10～18}
