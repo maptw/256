@@ -65,9 +65,8 @@ fetch('https://cors-rrw.onrender.com/github/wbjon/map_json/04.json').then(res=>r
 
 async function toPng(z){//List{z:10～18}
  const ListZ={}
- for(let x in List[z]){
+ for(let x in List[z]){x=+x;if(x<219373)continue
   for(let y of List[z][x]){
-   x=+x
    const center=calculateCenter(z,x,y)
    sum++;console.log('z',z,'x',x,'y',y,tmp)
    await new Promise(resolve=>{
