@@ -121,7 +121,7 @@ function calculateCenter(z,x,y){
 //8.記下生成的訪問令牌，因為這是你唯一能看到它的機會。
 
 //重要！為避免git自動回收干擾，先執行git config gc.auto 0 關閉此倉庫的自動回收；git config --get gc.auto 可看設定結果
-//隨時手動 git gc 一般回收；git gc --aggressive 徹底回收
+//隨時手動 git gc 一般回收；git gc --prune=now --aggressive 徹底回收
 
 //捨棄以上做法，改為：
 //創建C:/256
